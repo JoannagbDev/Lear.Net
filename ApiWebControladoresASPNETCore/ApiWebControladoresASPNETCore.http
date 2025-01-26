@@ -1,0 +1,73 @@
+// Este archivo contiene solicitudes HTTP para probar los controladores de la API en ASP.NET Core.
+// Se define la dirección del host para la API de controladores web de ASP.NET Core.
+
+//@ApiWebControladoresASPNETCore_HostAddress = http://localhost:5058
+// Variable que almacena la dirección del host para la API de controladores web de ASP.NET Core.
+
+@JGBPizza_HostAddress = http://localhost:5058
+// Variable que almacena la dirección del host para la API de JGBPizza.
+
+// Solicitud GET para obtener el pronóstico del tiempo desde la API de controladores web de ASP.NET Core.
+// La solicitud se realiza a la URL definida en la variable ApiWebControladoresASPNETCore_HostAddress.
+// Se espera una respuesta en formato JSON.
+# GET {{ApiWebControladoresASPNETCore_HostAddress}}/weatherforecast/
+# Accept: application/json
+
+// Solicitud GET para obtener la lista de pizzas desde la API de JGBPizza.
+// La solicitud se realiza a la URL definida en la variable JGBPizza_HostAddress.
+// Se espera una respuesta en formato JSON.
+GET {{JGBPizza_HostAddress}}/Pizza/
+Accept: application/json
+
+// El marcador ### indica el final de una solicitud HTTP en este archivo.
+###
+
+// Solicitud POST para agregar una nueva pizza a la lista de pizzas en la API de JGBPizza.
+// La solicitud se realiza a la URL definida en la variable JGBPizza_HostAddress.
+
+POST {{JGBPizza_HostAddress}}/Pizza/
+Content-Type: application/json
+
+{
+  "id": 0,
+  "name": "Pizza de Pollo BBQ",
+  "price": 12.99,
+  "description": [
+    "Pollo",
+    "Salsa BBQ",
+    "Queso",
+    "Cebolla",
+    "Pimiento"
+  ],
+  "isGlutenFree": false
+}
+
+###
+
+// Solicitud PUT para actualizar la información de una pizza en la lista de pizzas en la API de JGBPizza.
+// La solicitud se realiza a la URL definida en la variable JGBPizza_HostAddress.
+
+PUT {{JGBPizza_HostAddress}}/Pizza/1
+Content-Type: application/json
+
+{
+  "id": 1,
+  "name": "Pizza de Pollo BBQ",
+  "price": 12.99,
+  "description": [
+    "Pollo",
+    "Salsa BBQ",
+    "Queso",
+    "Cebolla",
+    "Pimiento"
+  ],
+  "isGlutenFree": false
+}
+
+###
+
+// Solicitud DELETE para eliminar una pizza de la lista de pizzas en la API de JGBPizza.
+// La solicitud se realiza a la URL definida en la variable JGBPizza_HostAddres HTTP/1.1
+DELETE {{JGBPizza_HostAddress}}/Pizza/1
+
+###

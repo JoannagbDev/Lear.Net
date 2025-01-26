@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "9R9XfSkHCag=",
+  "success": true,
+  "projectFilePath": "C:\\dev\\NET\\github\\Lear.Net\\ApiWebControladoresASPNETCore\\ApiWebControladoresASPNETCore.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\joann\\.nuget\\packages\\microsoft.aspnetcore.openapi\\9.0.0\\microsoft.aspnetcore.openapi.9.0.0.nupkg.sha512",
+    "C:\\Users\\joann\\.nuget\\packages\\microsoft.openapi\\1.6.17\\microsoft.openapi.1.6.17.nupkg.sha512"
+  ],
+  "logs": []
+}
