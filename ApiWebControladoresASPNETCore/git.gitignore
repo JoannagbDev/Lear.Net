@@ -72,7 +72,7 @@ ScaffoldingReadMe.txt
 .nuget/
 packages/
 
-*obj/
-*bin/
-*Properties/
-*.json
+obj/
+bin/
+Properties/
+.json
